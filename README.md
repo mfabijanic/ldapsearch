@@ -1,7 +1,7 @@
 # ldapsearch.sh
 
 
-ldapsearch.sh search LDAP and convert time values to human readable
+ldapsearch.sh search LDAP and convert time values into human readable
 format and decode base64 encoded values. It helps administrators in
 reading Active Directory LDAP values in bash shell.
 
@@ -10,7 +10,7 @@ reading Active Directory LDAP values in bash shell.
 # Prerequisites
 
 
-U must have installed ldapsearch tool.
+You must have installed ldapsearch tool.
 
 
 In Ubuntu install ldap-utils.
@@ -51,7 +51,7 @@ $ sudo apt install krb5-user
 
   Account:              `ldapsearch.sh -n "computer$"`
 
-  Disabled Account:     `ldapsearch.sh -s d -n "*compute\*$"`
+  Disabled Account:     `ldapsearch.sh -s d -n "*compute*$"`
 
   Created/Changed:      `ldapsearch.sh -a "sAMAccountName whenCreated whenChanged" -n "computer$"`
 
@@ -62,7 +62,7 @@ $ sudo apt install krb5-user
 
   Group:                `ldapsearch.sh -n "%group"`
 
-  Enabled Group:        `ldapsearch.sh -s e -n "%\*group\*"`
+  Enabled Group:        `ldapsearch.sh -s e -n "%*group*"`
 
   Predefined Filter:    `ldapsearch.sh -g empty`
 
