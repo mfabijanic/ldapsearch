@@ -17,6 +17,10 @@ In Ubuntu install ldap-utils.
 
 $ sudo apt install ldap-utils
 
+GSSAPI dependency.
+
+$ sudo apt install libsasl2-modules-gssapi-mit
+
 
 If u use Kerberos, install package krb5-user.
 
