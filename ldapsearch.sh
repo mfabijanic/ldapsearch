@@ -379,7 +379,7 @@ if [[ $debug -eq 1 ]]; then
   echo
   echo "LDAP Filter:      $FILTER"
   echo "LDAP Attributes:  $ldap_attr"
-  echo "LDAP Search:      $LDAPSEARCH"
+  echo "LDAP Search:      $COMMAND \"$FILTER\" $ldap_attr"
   echo
 fi
 
